@@ -1,0 +1,82 @@
+/*****************************************************************************
+
+    Until now, we have added the possibility to move our robot inside
+    the grid, but we have not added 'rules' to avoid going to invalid
+    rows and/or columns. For example, if we are in row 0 and try to go
+    North, the current behavior would be to go to row -1, which is not
+    valid.
+
+    Add a validation in your 'moveForward' and 'moveBackward' functions
+    to check if the position where we are going to move the robot is
+    valid or not.
+
+    Take into account the following details:
+
+        · The position should be checked BEFORE moving the robot. What
+          this means is that you should not modify the 'x' and 'y'
+          properties of the robot directly before checking the position.
+          
+          You can, for example, create auxiliar variables to store the
+          current robot's position, update them as necessary depending
+          on the robot's direction, and then check if those values are
+          valid. If they are, you just have to set them to your robot
+          properties. If they are not valid, the following message
+          should be printed in the console:
+
+            "Cannot move robot outside the grid!"
+
+
+        · You will have to check the number of row and the number of
+          column we are trying to go to, because it cannot be bigger
+          than the maximum number of rows and columns the grid accepts,
+          and it cannot be slower than 0 (zero).
+
+          For example, if we have a 10x10 grid, the minimum number of
+          row/column is 0 (zero) and the maximum is 9.
+
+          To know the number of rows and columns the grid has, follow
+          this example:
+
+            Having a 5x5 grid like the following one:
+
+                [
+                    [false, false, false, false, false],
+                    [false, false, false, false, false],
+                    [false, false, false, false, false],
+                    [false, false, false, false, false],
+                    [false, false, false, false, false]
+                ]
+
+            The number of rows is the number of elements the outer
+            array has (i.e., the number of arrays).
+
+            The number of columns is the number of elements the
+            inner arrays have (i.e., the number of 'false' each
+            internal array has).
+
+            IMPORTANT: as we are talking about a grid in which each
+                       row has the same number of items, to get the
+                       number of columns the grid has you just have
+                       to check how many items the first row has.
+
+            As another example, having this array:
+
+                let wordList = ["hello", "goodbye"]
+
+            To get the number of items the array has you would do:
+
+                wordList.length
+
+            And to get the number of characters our first string has
+            you would do:
+
+                wordList[0].length
+
+
+    After implementing the control to avoid going out of the grid, test
+    it by using the HTML interface we provided you. If you did it well,
+    when trying to move our robot to an invalid position, the console
+    message ('Cannot move robot outside the grid!') should be shown in
+    the "Game Log" at the right side of the screen.
+
+*****************************************************************************/

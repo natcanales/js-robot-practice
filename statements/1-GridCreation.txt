@@ -1,0 +1,42 @@
+/*****************************************************************************
+
+    Within the recently created 'robotGame.js' file, create a new
+    function called 'createGrid' that will create a matrix.
+
+    The function will receive the number of rows as first parameter
+    and the number of columns as second parameter. The function will
+    return the created matrix/grid.
+
+    Each grid's cell will contain the 'false' boolean value, and the
+    lowest number of both rows and columns will be 5.
+
+    For example, when calling the function like this:
+
+        createGrid(5, 5);
+
+    the returned value should be the following matrix:
+
+        [
+            [false, false, false, false, false],
+            [false, false, false, false, false],
+            [false, false, false, false, false],
+            [false, false, false, false, false],
+            [false, false, false, false, false]
+        ]
+
+    And when calling the function like this:
+
+        createGrid(4, 5);
+
+    the console should show the following message:
+
+        "The minimum grid's size is 5x5, but you provided 4x5"
+
+    Add default values for the function's parameters, to create by
+    default a 10x10 matrix when no arguments are passed to the
+    function when calling it. That way, a 10x10 matrix should be
+    returned when calling the function like this:
+
+        createGrid();
+
+*****************************************************************************/

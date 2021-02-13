@@ -1,0 +1,52 @@
+/*****************************************************************************
+
+    We are now going to create the functions that will allow our robot
+    to move all along the grid.
+
+    Create a function called 'moveForward' that will receive the robot
+    object as parameter. The function will have to modify the robot's
+    'x' and 'y' properties, depending on the current direction.
+
+    Here we add a little reference to guide you:
+
+        x0/y0  y1  y2  y3  y4
+
+        x1        N
+                  |
+        x2        |
+            W-----·-----E
+        x3        |
+                  |
+        x4        S
+
+        x5
+
+    As you can see, if our robot is looking to "N" (North) and it moves
+    forward, its 'x' value will decrease. As an another example, if the
+    robot is looking to "E" (East) and moves forward, its 'y' value will
+    increase.
+
+    Once you have the 'moveForward' function completed, test it by
+    pressing the '⬆' button within the 'Robot controls' panel in the HTML
+    website we provided you. If you do not initially turn the robot in
+    a direction within the grid, you may see the robot disappear. Do not
+    worry for that yet: if you rotate it and see the icon that represents
+    the robot move in the correct direction, you did it well!
+
+    Once you checked that your 'moveForward' function works well, create a
+    'moveBackward' function in order to allow the robot move backwards,
+    too.
+
+    To check if the developed function works well, do the same as before
+    but this time pressing the '⬇' button. If you see the 'robot' moving
+    in the opposite direction he is looking at (e.g., it looks "N" and
+    moves to "S"), it means you completed this statement successfully!
+
+    If something does not work, open the browser's console and check the
+    error messages to find out the errors.
+
+    WARNING: it is important to name your functions as the statement
+             says ('moveForward' and 'moveBackward') or the HTML will not
+             detect that you created the functions to move the robot.
+
+*****************************************************************************/

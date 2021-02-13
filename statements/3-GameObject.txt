@@ -1,0 +1,31 @@
+/*****************************************************************************
+
+    Create now an object called 'game' that will have the following
+    properties/keys:
+
+        · grid: will have as value the previously created matrix
+
+        · robot: will have as value the previously created object
+
+    It is important to keep the names as specified in the statement:
+    the created object must be called 'game', and its properties/keys
+    have to be 'grid' and 'robot'. Other names will not be correct.
+
+    Once you created the 'game' object, open the project's 'index.html'
+    file in Google Chrome. You should see a grid at the left side with
+    the size you decided earlier.
+
+    In the x and y position you specified for the robot, you should
+    see an icon pointing to the direction in which your robot is
+    looking. That icon will represent our robot, as it will tell us
+    both its position and its direction. With the default values of
+    x=0, y=0 and direction="N", we should see an icon with an arrow
+    pointing up ('north') at the most top-left cell of our grid.
+
+    You can press the 'Robot controls' panel buttons, but a message
+    will appear saying no functions were still implemented for that
+    by your side. The following steps will be to effectively create
+    some functions so the robot can really move by pressing those
+    buttons.
+
+*****************************************************************************/

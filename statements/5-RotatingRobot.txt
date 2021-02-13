@@ -1,0 +1,44 @@
+/*****************************************************************************
+
+    We are now going to create the functions that will allow our robot
+    to rotate left and right.
+
+    Create a function called 'turnLeft' that will receive the robot
+    object as parameter. The function will have to modify the robot's
+    direction property, depending on the current one.
+
+    Here we add a little reference in order to avoid mistakes:
+
+              N
+              |
+              |
+        W-----·-----E
+              |
+              |
+              S
+
+    As you can see, if our robot is looking to "N" (North) and it turns
+    left, the new direction will be "W" (West).
+
+    Once you have the 'turnLeft' function completed, test it by pressing
+    the '↺' button within the 'Robot controls' panel in the HTML website
+    we provided you. If you see the icon that represents the robot rotate
+    in the good direction, you did it well!
+
+    Once you checked that your 'turnLeft' function works well, create a
+    'turnRight' function in order to allow the robot turn in that
+    direction, too.
+
+    To check if the developed function works well, do the same as before
+    but this time pressing the '↻' button. If you see the 'robot' turning
+    in the desired direction, it means you completed this statement
+    successfully!
+
+    If something does not work, open the browser's console and check the
+    error messages to find out the errors.
+
+    WARNING: it is important to name your functions as the statement
+             says ('turnLeft' and 'turnRight') or the HTML will not
+             detect that you created the functions to rotate the robot.
+
+*****************************************************************************/

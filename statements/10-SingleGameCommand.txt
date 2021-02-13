@@ -1,0 +1,46 @@
+/*****************************************************************************
+
+    If you arrived here with everything completed and working, it means
+    you have developed all the game's functionality!
+
+    However, in this statement we will add an 'abstraction' layer that
+    will allow us to create game 'commands'. From now on, we are going
+    to work with the following commands:
+
+        · 'l': will be the game command to turn left
+        · 'r': will be the game command to turn right
+        · 'f': will be the game command to move forward
+        · 'b': will be the game command to move backward
+
+    To handle these commands, create a new function with the name
+    'executeGameCommand' that will receive the 'game' object as first
+    parameter, and a string as second parameter that will contain the
+    command ('l', 'r', 'f', 'b').
+
+    Your function will have to check the command that has been received
+    and call the correct robot movement functions you created before.
+
+    For example, for the 'l' command we will have to call the function
+    we created to turn our robot left.
+
+    If our function receives an unknown command, the following message
+    should be shown in the console:
+
+        "Unknown command: '<command>'"
+
+    For example, if we call our new 'executeGameCommand' function with
+    the command 'p', we should see the following message in the console:
+
+        "Unknown command: 'p'"
+
+    To see if you did it correctly, use the HTML interface to move the
+    robot. If something does not work, check the browser's console error
+    messages. If none appears, just check again your code and look for
+    possible wrong lines.
+
+    WARNING: it is very important to name the function as the statement
+             suggests ('executeGameCommand'). If you put another name,
+             the HTML interface will not know you implemented this
+             functionality!
+
+*****************************************************************************/

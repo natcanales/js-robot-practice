@@ -1,0 +1,52 @@
+/*****************************************************************************
+
+    We are now going to process several commands at once. This is the
+    last step!
+
+    Create a function called 'executeMultipleCommands' that will receive
+    the 'game' object as first parameter, and a string as second parameter
+    that will contain several chained commands.
+
+    Your function will first have to check if the second parameter is
+    of type 'string' in order to make everything work correctly. If the
+    second parameter is not a string, the function will only show the
+    following message in the console:
+
+        "Invalid commands!"
+
+    If the second parameter is a string, we will go character by
+    character calling the 'executeGameCommand' function we previously
+    created.
+
+    For example, we could call the 'executeMultipleCommands' function
+    like this:
+
+        executeMultipleCommands(game, "rffflbbbb")
+
+    which would internally call our 'executeGameCommand' with every
+    'letter' of our string, executing all the commands:
+
+        · Turn right once
+        · Move forward three times
+        · Turn left once
+        · Move backward four times
+
+    To see if you did it correctly, open the HTML interface. You should
+    now see a new button inside the 'Robot controls' panel, with a
+    'recording icon'. If you press it, a new panel appears with a
+    'Recording commands' area. Press the robot movement buttons as you
+    were doing until now: one by one the commands will be 'recorded',
+    and the robot will not move until you press the 'Run all!' button.
+
+    To help you know where the robot is while recording commands, we
+    are showing every cell the robot will visit with a green color.
+    If you want to cancel the 'recording session' you only have to
+    press again the 'recording icon' button within the 'Robot controls'
+    panel.
+
+    WARNING: it is very important to name the function as the statement
+             suggests ('executeMultipleCommands'). If you put another
+             name, the HTML interface will not know you implemented this
+             functionality and will not show the 'record' button.
+
+*****************************************************************************/

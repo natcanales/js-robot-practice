@@ -1,0 +1,40 @@
+/*****************************************************************************
+
+    Right now, the code should look more or less like this:
+
+        let matrix = createGrid();
+
+        let robot = {
+            x: 0,
+            y: 0,
+            direction: "N"
+        }
+
+        let game = {
+            grid: matrix,
+            robot: robot
+        };
+
+    However, we can resume the code a little bit by creating the
+    matrix and the robot in the game's definition, like in the
+    following example:
+
+        let game = {
+            grid: createGrid(),
+            robot: {
+                x: 0,
+                y: 0,
+                direction: "N"
+            }
+        };
+
+    That way, we will not need the auxiliar 'matrix' and 'robot'
+    variables, and we will have all the important information within
+    the 'game' object.
+
+    Just to see if you did it correcty, refresh the 'index.html' file
+    in the browser and check if the grid is still correctly painted in
+    the left side of the page. If it is, you can go ahead with the next
+    statement!
+
+*****************************************************************************/

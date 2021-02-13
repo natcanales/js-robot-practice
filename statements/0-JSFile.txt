@@ -1,0 +1,29 @@
+/*****************************************************************************
+
+    We have given you a Website project inside the 'code' folder.
+    Your goal will be to make it work correctly only by developing
+    JavaScript code as we will ask you for in the following statements.
+
+    The goal of the project/game is to be able to move a 'robot' inside
+    a grid. The code you will develop will create the grid and allow
+    the robot to move within it.
+
+    To begin with this exercise, you must first create a file called
+    'robotGame.js' inside the 'code' folder of the project.
+
+    You do not have to worry about the other project's files. The
+    'robotGame.js' file will be the only one you will have to edit
+    during the exercise.
+
+    Every code development requested in the following statments will
+    have to be included in the new file you have created.
+
+    WARNING: it is important for you to use the exact names we will
+             give you in the statements. For example, as we told you
+             to create a new file with the name of 'robotGame.js',
+             other names will not be correct.
+
+             As so, you cannot name the file 'RobotGame.js',
+             'robotgame.js', and so on.
+
+*****************************************************************************/

@@ -1,0 +1,118 @@
+/*****************************************************************************
+
+    Let's add now a bit of flavour to our grid. Until now, we have an
+    empty ground in which our robot can move. In order to make the
+    'game' more interesting, we are going to set some obstacles in
+    the grid to avoid letting the robot move anywhere it wants.
+
+    If you remember, our game's grid is full of 'false' boolean values.
+    We will play with the meaning of those values by saying that 'if a
+    cell has a false value, there is nothing in it: our robot can move
+    to it without problems'. After you complete this exercise, we will
+    be able to say the following, too: 'However, if a cell has a true
+    value it means there is an obstacle in it, so our robot will not
+    be able to go in it'.
+
+    Create a 'setObstacles' function that will receive the game's grid
+    as first parameter and an array of obstacles positions as second
+    parameter.
+
+    The second parameter will be an array of objects that will tell us
+    a row and column in which an obstacle will be positioned (i.e., a
+    grid cell in which we will put 'true' as value).
+    An example of obstacle object would be the following one:
+
+        {
+            x: 5,
+            y: 7
+        }
+
+    This object would tell us that in the row 5 and column 7 of our
+    grid there will be an obstacle.
+
+    As explained before, our second parameter will be an array of that
+    kind of obstacles, like the following one:
+
+        [
+            {x: 2, y: 6},
+            {x: 3, y: 1},
+            {x: 7, y: 1}
+        ]
+
+    Knowing all this, your function will have to iterate the obstacles
+    positions array and do the following for each object:
+
+        1. Check if the number of row and number of column specified
+           by the obstacle object exists in our grid (i.e., the same
+           check you did in the previous statement). If a position is
+           not correct, we will show the following message in the
+           console:
+
+                "Cannot set obstacle at x=<x_value>, y=<y_value>"
+
+        2. If the specified obstacle's position is correct, you will
+           set a 'true' value in that position of our grid.
+
+    From now on, we will consider two possible statuses for each cell
+    of our game's grid:
+
+        · false: a cell with a false value will mean that it is empty,
+                 and so our robot can go in it.
+
+        · true: a cell with a true value will mean that there is an
+                obstacle in it, and so our robot should not be able
+                to go in it.
+
+    The following is an example of how our function should work:
+
+        // 5x5 Matrix
+        let grid = [
+            [false, false, false, false, false],
+            [false, false, false, false, false],
+            [false, false, false, false, false],
+            [false, false, false, false, false],
+            [false, false, false, false, false]
+        ];
+
+        // Array of obstacle's positions
+        let obstacles = [
+            {x: 2, y: 4},
+            {x: 3, y: 1},
+            {x: 7, y: 1}
+        ]
+
+        // We call the function
+        setObstacles(grid, obstacles);
+
+    After calling our 'setObstacles' function, the grid would have
+    changed its initial values and would contain the following ones:
+
+        // grid[2][4] is now true
+        // grid[3][1] is now true
+        [
+            [false, false, false, false, false],
+            [false, false, false, false, false],
+            [false, false, false, false, true],
+            [false, true, false, false, false],
+            [false, false, false, false, false]
+        ]
+
+    And, as we tried to put an obstacle at grid[7][1], which does not
+    exist, the following message should have been shown in the console:
+
+        "Cannot set obstacle at x=7, y=1"
+
+
+    Once you have defined the function, do the following after the
+    creation of your 'game' object:
+
+        · Create an array of 10 obstacles minimum
+
+        · Call the 'setObstacles' function passing the game's grid and
+          the obstacles' array as parameters
+
+    The result should be to have real obstacles in our game's grid.
+    Refresh the HTML interface on your browser. You should see the
+    obstacles as black cells in your grid!
+
+*****************************************************************************/

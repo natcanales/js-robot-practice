@@ -1,0 +1,29 @@
+/*****************************************************************************
+
+    Call the 'createGrid' function you previously created and store
+    its returned value in a variable with the name you want. You decide
+    the number of rows and columns you want to create the grid with.
+
+    Create now an object that will represent our robot in the game.
+    The object will have the following properties/keys:
+
+        · x: will tell us the number of the row in which our robot is
+             located; its initial value is 0
+
+        · y: will tell us the number of the column in which our robot
+             is located; its initial value is 0
+
+        · direction: will tell us the direction in which our robot
+                     is looking at. The possible values for this
+                     key will be the four cardinal points:
+
+                        "N", "S", "E", "W"
+
+                     The initial value will be "N"
+
+
+    NOTE: it is important to keep the properties/keys names as specified
+          in the statement. You must call the properties 'x', 'y' and
+          'direction'. Other names will not be correct.
+
+*****************************************************************************/

@@ -1,0 +1,203 @@
+/*****************************************************/
+/*                  MAIN CONTAINER                   */
+/*****************************************************/
+.robot-game {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+/*****************************************************/
+/*                       GRID                        */
+/*****************************************************/
+.robot-game .grid {
+	border: 2px solid black;
+}
+
+
+/*****************************************************/
+/*                     GRID CELL                     */
+/*****************************************************/
+.robot-game .grid .cell {
+	border: 2px solid black;
+	padding: 1.5em;
+}
+
+.robot-game .grid .cell.filled {
+	background-color: black;
+}
+
+.robot-game .grid .cell.robot-location {
+	background-image: url("../img/pointer-down.png");
+	background-repeat: no-repeat;
+	background-size: 70% 70%;
+	background-position: center;
+	background-color: #BBB;
+}
+
+.robot-game .grid .cell.programmed {
+	background-color: #C1F5AB;
+}
+
+.robot-game .grid .cell.robot-location.left {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.robot-game .grid .cell.robot-location.up {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.robot-game .grid .cell.robot-location.right {
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	transform: rotate(270deg);
+}
+
+
+/*****************************************************/
+/*                   CONTROL PANEL                   */
+/*****************************************************/
+.robot-game .control-panel {
+	background-color: #DDD;
+	width: 10em;
+	padding: 0 2em;
+	-webkit-box-shadow: 0 0 3px 3px #AAA;
+  	-moz-box-shadow: 0 0 3px 3px #AAA;
+  	box-shadow: 0 0 3px 3px #AAA;
+}
+
+.robot-game .control-panel h3 {
+	text-align: center;
+	margin: 0.5em 0;
+}
+
+.robot-game .control-panel .move-buttons {
+	padding: 1em 0 1.5em;
+	width: 7em;
+	margin: auto;
+}
+
+.robot-game .control-panel .move-buttons .top-row,
+.robot-game .control-panel .move-buttons .middle-row,
+.robot-game .control-panel .move-buttons .bottom-row {
+	display: flex;
+}
+
+.robot-game .control-panel .move-buttons .top-row,
+.robot-game .control-panel .move-buttons .bottom-row {
+	justify-content: center;
+}
+
+.robot-game .control-panel .move-buttons .middle-row {
+	justify-content: space-between;
+}
+
+.robot-game .control-panel .move-buttons button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+}
+
+.robot-game .control-panel .move-buttons .record {
+	border: 1px solid #333;
+	outline: none;
+}
+
+.robot-game .control-panel .move-buttons .record.pressed {
+	background-color: #777;
+}
+
+.robot-game .control-panel .move-buttons .record img {
+	max-width: 100%;
+}
+
+.robot-game .control-panel .commands-recording .recording-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1em 0;
+}
+
+.robot-game .control-panel .commands-recording .recording-panel .commands-list {
+	height: 3em;
+	width: 100%;
+	margin: 0.7em 0 1em;
+	padding: 1em 0.5em;
+	background-color: #EEE;
+	font-family: monospace;
+	font-size: 16px;
+	word-wrap: break-word;
+}
+
+.robot-game .control-panel .commands-recording .recording-panel .run-command-list {
+	align-self: stretch;
+	padding: 0.3em 0;
+}
+
+
+/*****************************************************/
+/*                     GAME LOG                      */
+/*****************************************************/
+.robot-game .game-log {
+	width: 40%;
+	min-width: 400px;
+	align-self: stretch;
+	background-color: #222;
+}
+
+.robot-game .game-log .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5em 1em;
+	background-color: #333;
+	border-bottom: 1px solid #444;
+}
+
+.robot-game .game-log .header h3 {
+	color: white;
+	margin: 0;
+}
+
+.robot-game .game-log .header .clear-log {
+	text-decoration: none;
+	padding: 0.4em 1em;
+	background-color: #BBB;
+	border: 1px solid #DDD;
+	border-radius: 2px;
+}
+
+.robot-game .game-log .header .clear-log:hover {
+	cursor: pointer;
+	background-color: #CCC;
+}
+
+.robot-game .game-log .messages-list {
+	overflow-y: auto;
+	padding: 0.5em 1em;
+	max-height: 100%;
+}
+
+.robot-game .game-log .messages-list .message {
+	display: block;
+	color: lightgreen;
+	font-family: monospace;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 15px;
+	padding: 0.7em 0;
+	border-bottom: 1px solid #333;
+}

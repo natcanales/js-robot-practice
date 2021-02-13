@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>The Robot's Path</title>
+        <script src="./libs/jquery-3.5.1.min.js"></script>
+        <script src="./js/gameDisplay.js"></script>
+        <script src="./js/robotGame.js"></script>
+    </head>
+    <body>
+        <section class="robot-game">
+            <table class="grid" cellpadding="0" cellspacing="0">
+                <tbody></tbody>
+            </table>
+            <aside class="control-panel">
+                <h3>Robot controls</h3>
+                <hr>
+                <div class="move-buttons">
+                    <div class="top-row">
+                        <button class="move-forward">⬆</button>
+                    </div>
+                    <div class="middle-row">
+                        <button class="rotate-left">↺</button>
+                        <button class="rotate-right">↻</button>
+                    </div>
+                    <div class="bottom-row">
+                        <button class="move-backward">⬇</button>
+                    </div>
+                </div>
+            </aside>
+            <aside class="game-log">
+                <div class="header">
+                    <h3>Game Log</h3>
+                    <a class="clear-log">Clear log</a>
+                </div>
+                <div class="messages-list"></div>
+            </aside>
+        </section>
+    </body>
+    <script>
+        drawGrid();
+        configureRobotControls();
+        configureLog();
+        setMoveButtonsFunctionality();
+    </script>
+</html>

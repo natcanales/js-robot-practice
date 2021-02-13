@@ -1,0 +1,70 @@
+/*****************************************************************************
+
+    If you recall what you did after reading the statement number 7,
+    you added some validation before moving the robot to avoid going
+    outside the game's grid.
+
+    Now, we have to add another validation because the grid can contain
+    obstacles, and our robot cannot go into those occupied cells. You
+    could add a condition to the check implemented in statement 7, but
+    as that check appears both in the 'moveForward' and 'moveBackward'
+    functions, you would have to add the new lines of code twice.
+
+    To avoid this code duplication, we are going to create a function
+    that will do that check and replace the lines implemented with the
+    statement 7 with a call to this new function.
+
+    Create a new function with the name 'checkIfValidPosition', that
+    will receive a position object as first parameter, and the game's
+    grid as second parameter. The function will return a boolean 'true'
+    value if the position is valid and a 'false' value if it is not.
+
+    The first parameter will specify a position, so an example of what
+    this parameter could receive would be the following object:
+
+        {
+            x: 5,
+            y: 7
+        }
+
+    This object would tell to the function the concrete row (x) and
+    column (y) that we want to check. As the second parameter is the
+    game's grid, we would be able to use the code implemented with the
+    statement 7 to check if the position is valid.
+
+    After adding and adapting the code you already had within the new
+    function, do not forget to add a new condition to check if there is
+    an obstacle in the specified position. If there is, the function
+    will show the following message in the console:
+
+        "The robot cannot run into an obstacle!"
+
+    Summarizing our function will have to tell us if a concrete position
+    is valid by:
+
+        1. Checking if the position exists (i.e., the number of row and
+           number of column are contained in the grid).
+
+        2. Checking if in the specified position there is an obstacle
+           or not.
+
+    If the position appears to be incorrect, the function should return
+    a 'false' value, and if everything is O.K. and the position is
+    ready to be accessed by our robot, the function should return a
+    'true' value.
+
+    As an example, we could use the function as follows:
+
+        let possiblePosition = {x: possibleRow, y: possibleColumn};
+        let isValid = checkIfValidPosition(possiblePosition, grid);
+
+        if (isValid) {
+            // We move the robot
+        }
+
+    To check if everything works as expected, use the HTML interface
+    to move the robot everywhere in the grid. It should not be able to
+    go out of the grid, nor run into obstacles. The console error
+    messages you added should appear in the "Game Log".
+
+*****************************************************************************/
