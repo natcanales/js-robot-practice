@@ -6,7 +6,9 @@
     North, the current behavior would be to go to row -1, which is not
     valid.
 
-    Add a validation in your 'moveForward' and 'moveBackward' functions
+    Add a new parameter to your 'moveForward' and 'moveBackward'
+    functions that will be the game's grid. This way, you will be able
+    to use the grid's dimensions to add a validation in both functions
     to check if the position where we are going to move the robot is
     valid or not.
 
